@@ -6,7 +6,7 @@ Date of extraction: 2026-10-11. Citations are `file:line` relative to `engr489-v
 
 Your brief assumed code, data files, plots and a multi-commit history. **This repo has none of those.**
 
-- **One commit**: `44b4a26`, 2026-08-26 15:19:55 +1200, message "intial vault" (sic). It adds 20 files, 492 lines.
+- **One content commit**: `44b4a26`, 2026-08-26 15:19:55 +1200, message "intial vault" (sic). It adds 20 files, 492 lines. (The only later commit, 2026-10-11, adds this extract file itself.)
 - **No source code.** There is no firmware, Python, MATLAB or C++ in it. `reference/firmware.md:5` says the firmware lives in a separate `engr489-firmware/` repo, which is not here.
 - **No data files and no result plots.** The only image is one architecture block diagram (§7).
 - **No CLAUDE.md.** There are no test files either.
@@ -27,7 +27,7 @@ Your brief assumed code, data files, plots and a multi-commit history. **This re
 - Structure: current-state reference notes, an append-only worklog, and a live checklist (`README.md:7-15`, `README.md:27-32`).
 - Hard design constraint: non-ferromagnetic and non-conductive near the probe, because the robot sits inside an active coil (`reference/bom-materials.md:5-7`).
 
-**Active date range from git.** 2026-08-26 only (`44b4a26`). The worklog also has only that date (`worklog.md:18`).
+**Active date range from git.** 2026-08-26 only (`44b4a26`); the later 2026-10-11 commit is this extract, not vault activity. The worklog also has only that date (`worklog.md:18`).
 
 **Not recoverable from this repo.**
 - The March 2026 proposal, the gantry → delta change and the Oct 2026 scope change in skeleton I-B.
@@ -168,7 +168,7 @@ Not in the vault: pen-and-ruler tests, the leave-one-run-out correction fit, mag
 
 | Problem | Workaround / status | Cite |
 |---|---|---|
-| Inherited code hard-coded wrong geometry (567/76/524/1244) | Fixed to 450/18/180/600; warns to check scripts do not revert | `reference/kinematics.md:13-15` |
+| Inherited code hard-coded wrong geometry (567/76/524/1244) | Fixed to 450/18/180/600; warns to check scripts do not revert | `reference/kinematics.md:8-15` |
 | MATLAB/Simulink duplicate functions and a parameter mismatch | Cleaned up and resolved | `reference/firmware.md:6-7` |
 | Reachable depth 276 mm vs 300 mm target | **Open.** Revision options were "identified, not yet chosen" (the options are not listed) | `reference/kinematics.md:17-19`, `open-issues.md:5` |
 | Steel-ball rod ends are magnetic | **Open.** A non-magnetic swap is needed before the final build | `open-issues.md:6`, `reference/rod-ends-joints.md:6-8` |
